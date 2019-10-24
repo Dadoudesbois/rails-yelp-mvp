@@ -1,9 +1,7 @@
-<%= form_for(restaurant) do |f| %>
-<%= f.label :name %>
-<%= f.text_field :name %>
-<%= f.label :address %>
-<%= f.text_field :address %>
-<%= f.label :category %>
-<%= f.text_field :category %>
-<%= f.submit "add restaurant", class: "btd"%>
+
+<%= simple_form_for restaurant do |s| %>
+  <%= s.input :name, label: false, placeholder: 'Name' %>
+  <%= s.input :address, label: false, placeholder: 'Address' %>
+  <%= s.input :category, collection: ["chinese", "italian", "japanese", "french", "belgian"], label: false, placeholder: 'Category' %>
+  <%= s.submit "Add", class: "btd-light" %>
 <% end %>

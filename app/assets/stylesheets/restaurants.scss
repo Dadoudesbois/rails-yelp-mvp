@@ -1,3 +1,61 @@
 // Place all the styles related to the restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$grey : #CDCDCD;
+$gd : #DCDCDC;
+$gb : #999999;
+$beige : #EAC8A3;
+
+.center {
+  text-align: center;
+  margin: 20px auto;
+  width: 60vw;
+  color: $gb;
+}
+
+a:hover , link_to:hover {
+  text-decoration: none;
+  color: $grey
+}
+
+a, link_to {
+    color: $gb;
+}
+
+ul {
+  text-align: left;
+  margin: 10px auto;
+  width: 50%;
+  li {
+    list-style: none;
+  }
+}
+
+.btd-light {
+  color: $gb;
+  padding: 8px;
+  margin: 10px auto;
+  border-radius: 15px;
+  border: 1px solid $gb;
+  &:hover {
+    text-decoration: none;
+    color: $gd;
+    border: 1px solid $gd;
+  }
+}
+
+.resto-list {
+  text-align:center;
+  padding: 10px;
+}
+
+.f {
+  padding: 10px;
+  box-shadow: 0px 0px 3px $gb;
+  margin: 40px auto;
+  background-color: white;
+}
+
+body {
+  background-color: white;
+}
